@@ -24,8 +24,6 @@ public class Main {
         persoane.add(new Persoana(Gen.masculin));
         for (Persoana i : persoane) {
             i.showGen();
-
-            
         }
     }
 }
