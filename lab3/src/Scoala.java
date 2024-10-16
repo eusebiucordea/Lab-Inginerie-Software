@@ -45,11 +45,11 @@ public class Scoala
 
     int getToatalElevi()
     {
-        int contor = 0;
-        for(Map.Entry<String, Clasa> e : cls.entrySet())
+        int totalElevi = 0;
+        for (Clasa c : cls.values())
         {
-            contor++;
+            totalElevi += c.getTotalElevi();
         }
-        return contor;
+        return totalElevi;
     }
 }

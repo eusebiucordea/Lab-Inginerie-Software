@@ -17,7 +17,7 @@ public class Clasa{
         elevi.remove(e);
     }
 
-    int getTotalElevi(Elev e)
+    int getTotalElevi()
     {
         int size = elevi.size();
         return size;
