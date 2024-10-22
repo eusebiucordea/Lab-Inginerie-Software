@@ -24,12 +24,17 @@ public class Main {
         int numarClase = scoala.getNumarClase();
         System.out.println("Numarul de clase : " + numarClase);
 
+        System.out.println("\nElevii din 1A :");
+        for (Elev elev : c1.getElevi()) {
+            System.out.println(elev.getNume());
+        }
+
         int numarElevi = scoala.getToatalElevi();
-        System.out.println("Numarul total de elevi in scoala : " + numarElevi);
+        System.out.println("\nNumarul total de elevi in scoala : " + numarElevi);
 
         //eliminare elev
         c1.eliminaElev(e1);
-        System.out.println("Numarul de elevi in c1 : " + c1.getTotalElevi());
+        System.out.println("\nNumarul de elevi in c1 : " + c1.getTotalElevi());
 
 //        //eliminare elev dupa nume
 //        scoala.eliminaElevDupaNume("Georgiana");
@@ -37,11 +42,23 @@ public class Main {
 
         //eliminare clasa
         scoala.eliminaClasa("1A");
-        System.out.println("Numarul de clase dupa eliminare clasa : " + scoala.getNumarClase());
+        System.out.println("\nNumarul de clase dupa eliminare clasa : " + scoala.getNumarClase());
 
         //adauga elev in clasa
         scoala.adaugaElevInClasa("1C",e1);
-        System.out.println("Numar elevi dupa adauga : " + c3.getTotalElevi());
+        System.out.println("\nNumar elevi dupa adauga : " + c3.getTotalElevi());
+
+        System.out.println("\nElevii din 1C :");
+        for (Elev elev : c3.getElevi())
+        {
+            System.out.println(elev.getNume());
+        }
+
+//        System.out.println("elevii din 1a");
+//        for (Elev elev : c1.getElevi())
+//        {
+//            System.out.println(elev.getNume());
+//        }
 
     }
 }
