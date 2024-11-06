@@ -4,12 +4,3 @@
 <t:pageTemplate pageTitle="ParkingLot">
     <h1>Welcome to the Parking Lot</h1>
 </t:pageTemplate>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>JSP - Hello World</title>
-</head>
-<body>
-<a href="about.jsp">About</a>
-</body>
-</html>

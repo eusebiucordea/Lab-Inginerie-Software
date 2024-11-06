@@ -11,12 +11,3 @@
 <t:pageTemplate pageTitle="About Parking Lot">
         <h1>About Parking Lot</h1>
 </t:pageTemplate>
-
-<html>
-<head>
-    <title>Sbout</title>
-</head>
-<body>
-
-</body>
-</html>
