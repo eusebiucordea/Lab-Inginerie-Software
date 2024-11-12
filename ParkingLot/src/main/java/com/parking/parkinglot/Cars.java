@@ -1,5 +1,4 @@
-package com.example.parkinglot;
-
+package com.parking.parkinglot;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
