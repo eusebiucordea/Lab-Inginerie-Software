@@ -19,6 +19,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link active" ${activePage eq '/Users' ? ' active' : ''}
+                           aria-current="page" href="${pageContext.request.contextPath}/users.jsp">Users
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item">
