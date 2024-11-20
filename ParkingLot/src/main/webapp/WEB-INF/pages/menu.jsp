@@ -20,7 +20,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" ${activePage eq '/Users' ? ' active' : ''}
-                           aria-current="page" href="${pageContext.request.contextPath}/users.jsp">Users
+                           aria-current="page" href="${pageContext.request.contextPath}/Users">Users
                         </a>
                     </li>
                     <li class="nav-item">
