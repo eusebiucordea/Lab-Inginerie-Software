@@ -35,7 +35,8 @@ public class UserBean {
         for (User user : usersList) {
             UserDto userDto = new UserDto(
                     user.getUsername(), // Username from Users entity
-                    user.getEmail()     // Email from Users entity
+                    user.getEmail(),   // Email from Users entity
+                    user.getId()
             );
             userDtos.add(userDto);
         }
