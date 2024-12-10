@@ -11,6 +11,12 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet(name = "Users", value = "/Users")
+@ServletSecurity(
+        value = @HttpConstraint(rolesAllowed = {"READ_USERS"}),
+        httpMethodConstraints = {
+                @HttpMethodConstraint(value = "POST", rolesAllowed = {"WRITE_USERS"})
+        }
+)
 public class Users extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
