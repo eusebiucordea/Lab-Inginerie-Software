@@ -3,6 +3,7 @@ package com.parking.parkinglot.servlets;
 import com.parking.parkinglot.common.UserDto;
 import com.parking.parkinglot.ejb.InvoiceBean;
 import com.parking.parkinglot.ejb.UserBean;
+import jakarta.annotation.security.DeclareRoles;
 import jakarta.inject.Inject;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
@@ -12,7 +13,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
+@DeclareRoles({"READ_CARS", "WRITE_CARS", "INVOICING"})
 @WebServlet(name = "Users", value = "/Users")
 @ServletSecurity(
         value = @HttpConstraint(rolesAllowed = {"READ_USERS"}),
